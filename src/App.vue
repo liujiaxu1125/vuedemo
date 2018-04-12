@@ -1,16 +1,22 @@
 <template>
   <div id="app">
-    {{message}}
-    <!--<router-view/>-->
+    <app-header></app-header>
+    <home></home>
   </div>
 </template>
 
 <script>
+import Home from './components/containers/Home/Home';
+import AppHeader from './components/commons/Header/Header';
+
 export default {
   name: 'App',
+  components: {
+    AppHeader,Home
+  },
   data(){
     return {
-      message: 'hello world!!!'
+      
     }
   }
 }
