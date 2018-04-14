@@ -4,6 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+//在原型中加入$http方法，去完成axios的请求
+import axios from 'axios'
+Vue.prototype.$http = axios
+
 Vue.config.productionTip = false
 
 import './stylesheets/main.scss'
